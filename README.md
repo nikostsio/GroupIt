@@ -36,6 +36,9 @@ sudo apt install android-tools-adb android-tools-fastboot
 ## Usage
 
 1.  Make a folder for the temporary storage of the screenshots
+    ```bash
+    mkdir images
+    ```
 2.  Open the **GroupIt** app on your phone and start a game.
 3.  Run the bot:
     ```bash
