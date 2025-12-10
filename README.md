@@ -7,7 +7,14 @@ The bot uses **ADB (Android Debug Bridge)** for device control and simple algori
 To run this solver, you need:
 
 1.  **ADB**
-2.  **ImageMagick:**
+2.  **ImageMagick** (sudo apt install imagemagick)
+
+Run this to install them:
+```bash
+sudo apt update
+sudo apt install imagemagick
+sudo apt install android-tools-adb android-tools-fastboot
+```
 
 
 ## Installation & Build
