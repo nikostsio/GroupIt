@@ -28,8 +28,9 @@ To run this solver, you need:
 
 ## Usage
 
-1.  Open the **GroupIt** app on your phone and start a game.
-2.  Run the bot:
+1.  Make a folder for the temporary storage of the screenshots
+2.  Open the **GroupIt** app on your phone and start a game.
+3.  Run the bot:
     ```bash
     cd ..
     ./build/Debug/GroupItSolver.exe
