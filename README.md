@@ -39,7 +39,7 @@ sudo apt install android-tools-adb android-tools-fastboot
 2.  Open the **GroupIt** app on your phone and start a game.
 3.  Run the bot:
     ```bash
-    mkdir images
     cd ..
+    mkdir images
     ./build/GroupitSolver
     ```
