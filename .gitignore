@@ -1,0 +1,9 @@
+# Build directories
+build/
+
+# Images
+images/*.png
+images/*.bmp
+
+# VS Code settings
+.vscode/
