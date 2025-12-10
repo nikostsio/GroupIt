@@ -41,5 +41,5 @@ sudo apt install android-tools-adb android-tools-fastboot
     ```bash
     mkdir images
     cd ..
-    ./build/Debug/GroupItSolver.exe
+    ./build/GroupitSolver
     ```
