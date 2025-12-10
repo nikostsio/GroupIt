@@ -7,3 +7,6 @@ images/*.bmp
 
 # VS Code settings
 .vscode/
+
+# Weird `NUL` file that keeps appearing
+NUL

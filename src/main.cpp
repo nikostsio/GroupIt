@@ -29,9 +29,11 @@ int main(){
 
         // 3. Computer Vision: Detect cards
         std::vector<groupitCard> cards = getGroupItInfo(img.get_pixelArray(), img.get_width(), img.get_height());
-        // for (const auto& card: cards) {
-        //     card.print();
-        // }
+
+        //for (const auto& card: cards) {
+            //card.print();
+        //}
+
         if (cards.empty()) {
             // Check if the game has ended by checking the color of a specific pixel
             if (gameHasEnded(img.get_pixelArray(), img.get_width(), img.get_height())) {

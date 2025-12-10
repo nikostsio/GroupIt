@@ -23,7 +23,15 @@ void take_screenshot(){
     system("adb shell rm /sdcard/temp_groupit.png");
 
     // Convert PNG to BMP using ImageMagick
-    const char* cmdConvert = "magick images/screenshot.png -type TrueColor images/screenshot.bmp";
+    #ifdef _WIN32
+        // Windows: ImageMagick uses "magick"
+        const char* cmdConvert = "magick images/screenshot.png -type TrueColor images/screenshot.bmp";
+    #elif __linux__
+        // Linux: Standard package repositories usually use "convert"
+        const char* cmdConvert = "convert images/screenshot.png -type TrueColor images/screenshot.bmp";
+    #endif
+    //const char* cmdConvert = "convert images/screenshot.png -type TrueColor images/screenshot.bmp";
+    
     if (system(cmdConvert) != 0) {
         std::cerr << "Image conversion failed. Is Magick installed?" << std::endl;
     }
